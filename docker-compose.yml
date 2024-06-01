@@ -2,6 +2,7 @@ name: documenso-production
 
 services:
   database:
+    container_name: project_db
     image: postgres:15
     environment:
       - POSTGRES_USER=${POSTGRES_USER:?err}
